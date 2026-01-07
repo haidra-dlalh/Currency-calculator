@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة العملة السورية - القديمة والجديدة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>حاسبة العملة السورية</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="page1">العملة القديمة</a></li>
+                <li><a href="#" class="nav-link" data-page="page2">العملة الجديدة</a></li>
+                <li><a href="#" class="nav-link" data-page="page3">التحويل بين العملتين</a></li>
+            </ul>
+        </nav>
+        
+        <!-- الصفحة 1: العملة القديمة -->
+        <div id="page1" class="page active">
+            <h2>العملة القديمة (قبل حذف الصفرين)</h2>
+            <div class="currency-container">
+                <div class="currency-item currency-old">
+                    <h3>فئة 500 ليرة <span class="currency-value">500</span></h3>
+                    <input type="number" id="old-500" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-old">
+                    <h3>فئة 1000 ليرة <span class="currency-value">1,000</span></h3>
+                    <input type="number" id="old-1000" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-old">
+                    <h3>فئة 2000 ليرة <span class="currency-value">2,000</span></h3>
+                    <input type="number" id="old-2000" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-old">
+                    <h3>فئة 5000 ليرة <span class="currency-value">5,000</span></h3>
+                    <input type="number" id="old-5000" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+            </div>
+            
+            <div class="result">
+                <div id="old-total">المجموع: 0 ليرة سورية قديمة</div>
+            </div>
+        </div>
+        
+        <!-- الصفحة 2: العملة الجديدة -->
+        <div id="page2" class="page">
+            <h2>العملة الجديدة (بعد حذف الصفرين)</h2>
+            <div class="currency-container">
+                <div class="currency-item currency-new">
+                    <h3>فئة 10 ليرة <span class="currency-value">10</span></h3>
+                    <input type="number" id="new-10" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-new">
+                    <h3>فئة 25 ليرة <span class="currency-value">25</span></h3>
+                    <input type="number" id="new-25" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-new">
+                    <h3>فئة 50 ليرة <span class="currency-value">50</span></h3>
+                    <input type="number" id="new-50" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-new">
+                    <h3>فئة 100 ليرة <span class="currency-value">100</span></h3>
+                    <input type="number" id="new-100" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-new">
+                    <h3>فئة 200 ليرة <span class="currency-value">200</span></h3>
+                    <input type="number" id="new-200" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-new">
+                    <h3>فئة 500 ليرة <span class="currency-value">500</span></h3>
+                    <input type="number" id="new-500" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+            </div>
+            
+            <div class="result">
+                <div id="new-total">المجموع: 0 ليرة سورية جديدة</div>
+            </div>
+        </div>
+        
+        <!-- الصفحة 3: التحويل بين العملتين -->
+        <div id="page3" class="page">
+            <h2>التحويل بين العملة القديمة والجديدة</h2>
+            <h3>العملة القديمة</h3>
+            <div class="currency-container">
+                <div class="currency-item currency-both">
+                    <h3>فئة 500 ليرة <span class="currency-value">500</span></h3>
+                    <input type="number" id="both-old-500" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-both">
+                    <h3>فئة 1000 ليرة <span class="currency-value">1,000</span></h3>
+                    <input type="number" id="both-old-1000" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-both">
+                    <h3>فئة 2000 ليرة <span class="currency-value">2,000</span></h3>
+                    <input type="number" id="both-old-2000" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-both">
+                    <h3>فئة 5000 ليرة <span class="currency-value">5,000</span></h3>
+                    <input type="number" id="both-old-5000" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+            </div>
+            
+            <h3>العملة الجديدة</h3>
+            <div class="currency-container">
+                <div class="currency-item currency-both">
+                    <h3>فئة 10 ليرة <span class="currency-value">10</span></h3>
+                    <input type="number" id="both-new-10" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-both">
+                    <h3>فئة 25 ليرة <span class="currency-value">25</span></h3>
+                    <input type="number" id="both-new-25" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-both">
+                    <h3>فئة 50 ليرة <span class="currency-value">50</span></h3>
+                    <input type="number" id="both-new-50" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-both">
+                    <h3>فئة 100 ليرة <span class="currency-value">100</span></h3>
+                    <input type="number" id="both-new-100" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-both">
+                    <h3>فئة 200 ليرة <span class="currency-value">200</span></h3>
+                    <input type="number" id="both-new-200" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+                
+                <div class="currency-item currency-both">
+                    <h3>فئة 500 ليرة <span class="currency-value">500</span></h3>
+                    <input type="number" id="both-new-500" min="0" value="0" placeholder="أدخل العدد">
+                </div>
+            </div>
+            
+            <div class="total-container">
+                <div class="total-box total-old">
+                    <h3>المجموع بالعملة القديمة</h3>
+                    <div id="both-total-old" style="font-size: 1.8rem; margin-top: 10px;">0 ل.س</div>
+                </div>
+                
+                <div class="total-box total-converted">
+                    <h3>المجموع بعد التحويل</h3>
+                    <div id="both-total-converted" style="font-size: 1.8rem; margin-top: 10px;">0 ل.س جديدة</div>
+                </div>
+                
+                <div class="total-box total-new">
+                    <h3>المجموع بالعملة الجديدة</h3>
+                    <div id="both-total-new" style="font-size: 1.8rem; margin-top: 10px;">0 ل.س جديدة</div>
+                </div>
+            </div>
+            
+            <div class="summary-results">
+                <div class="result">
+                    <div id="both-total-new-summary">المجموع الإجمالي: 0 ليرة سورية جديدة (بعد تحويل العملة القديمة)</div>
+                </div>
+                
+                <div class="result-old">
+                    <div id="both-total-old-summary">المجموع الإجمالي: 0 ليرة سورية قديمة (بعد تحويل العملة الجديدة)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
